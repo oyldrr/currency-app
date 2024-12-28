@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.currency-container {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    height: 50vh;
+    min-height: fit-content;
+
+    width: 50vw;
+    min-width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+
+    font-family: roboto;
+
+    text-align: center;
+}
+
+.inner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-container input,
+.inner-container select {
+    background-color: #33333392;
+    color: #fff;
+
+    border: 0;
+    border-radius: 5px;
+
+    padding: 1em;
+    margin: .5rem;
+}
+
+.exchange-button {
+    background-color: #33333392;
+    color: #fff;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    padding: 1em;
+    margin: 1rem;
+
+    transition: all ease-in-out .3s;
+}
+
+.exchange-button:hover {
+    background-color: #333;
+    box-shadow: 1px 1px 16px #33333378;
+}
+
+.arrow-down {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .inner-container {
+        flex-direction: column;
+    }
+
+    .inner-container select {
+        width: 75%;
+        text-align: center;
+    }
+
+    .arrow-down {
+        display: block;
+    }
+
+    .arrow-right {
+        display: none;
+    }
+}
